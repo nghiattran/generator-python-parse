@@ -3,11 +3,7 @@
   "version": "0.0.0",
   "description": "Python API template for backend system using parse.com as database.",
   "homepage": "https://github.com/nghiattran/python-parse",
-  "author": {
-    "name": "Nghia Tran",
-    "email": "nghiattran3@gmail.com",
-    "url": "http://profile.nghiattran.com/"
-  },
+  "author": "Nghia Tran <nghiattran3@gmail.com> (http://profile.nghiattran.com/)",
   "files": [
     "generators"
   ],
@@ -31,10 +27,19 @@
     "gulp-nsp": "^2.1.0",
     "gulp-coveralls": "^0.1.0"
   },
-  "repository": "nghiattran/generator-python-parse",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nghiattran/generator-python-parse.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nghiattran/generator-python-parse/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
