@@ -13,21 +13,21 @@ describe('generator-python-parse:app', function () {
 
   it('creates bin folder', function () {
     assert.file([
-      'bin', 
-      'bin/clean', 
-      'bin/cover', 
-      'bin/install', 
+      'bin',
+      'bin/clean',
+      'bin/cover',
+      'bin/install',
       'bin/install_ec2',
-      'bin/mock', 
-      'bin/start', 
-      'bin/start_redis', 
+      'bin/mock',
+      'bin/start',
+      'bin/start_redis',
       'bin/test'
     ]);
   });
 
-    it('creates config folder', function () {
+  it('creates config folder', function () {
     assert.file([
-      'config', 
+      'config',
       'config/dev.json',
       'config/test.json'
     ]);
@@ -35,13 +35,13 @@ describe('generator-python-parse:app', function () {
 
   it('creates src folder', function () {
     assert.file([
-      'src', 
-      'src/controllers', 
-      'src/forms', 
-      'src/models', 
+      'src',
+      'src/controllers',
+      'src/forms',
+      'src/models',
       'src/static',
-      'src/templates', 
-      'src/utils', 
+      'src/templates',
+      'src/utils',
       'src/__init__.py'
     ]);
   });

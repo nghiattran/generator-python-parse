@@ -22,15 +22,17 @@
     "mem-fs": "^1.1.2"
   },
   "devDependencies": {
-    "yeoman-assert": "^2.0.0",
     "gulp": "^3.6.0",
+    "gulp-coveralls": "^0.1.0",
     "gulp-eslint": "^1.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-istanbul": "^0.10.3",
+    "gulp-jshint": "^3.3.12",
     "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-plumber": "^1.0.0",
+    "jshint-stylish": "^2.1.0",
+    "yeoman-assert": "^2.0.0"
   },
   "repository": {
     "type": "git",

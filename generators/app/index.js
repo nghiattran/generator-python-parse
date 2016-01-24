@@ -7,14 +7,14 @@ var path = require('path');
 var findUp = require('find-up');
 
 var base_path = path.dirname(findUp.sync('.yo-rc.json', {}));
-var app_name = base_path.split(path.sep).pop().toLowerCase() + "App";
+var app_name = base_path.split(path.sep).pop().toLowerCase() + 'App';
 
 
 String.prototype.set_path_to = function(file) {
-  return this + "/" + file;
-}
+  return this + '/' + file;
+};
 
-var Generator = module.exports = yeoman.Base.extend({
+module.exports = yeoman.Base.extend({
 
   config: function() {
     this.config.set();
@@ -56,7 +56,7 @@ var Generator = module.exports = yeoman.Base.extend({
             this.fs.copy(
               this.templatePath(srcpath.set_path_to(files[i])),
               this.destinationPath(despath.set_path_to(files[i]))
-            )
+            );
           } else {
             this.clone_files_in_dir(
               srcpath.set_path_to(files[i]),
@@ -64,16 +64,15 @@ var Generator = module.exports = yeoman.Base.extend({
               option
             );
           }
-        };
+        }
       } else {
-        var file_name = path.basename(full_srcpath);
         this.fs.copyTpl(
           this.templatePath(srcpath),
           this.destinationPath(despath),
           option
         );
       }
-    }
+    };
 
 
     this.fs.copy(
@@ -113,8 +112,9 @@ var Generator = module.exports = yeoman.Base.extend({
 
   end: function () {
     this.log(yosay(
-      'You need to activate virtualenv by running ' + chalk.red("source ".concat(this.props.virtualenv.concat("/bin/activate"))) 
-        + ' and install all dependencies by running ' + chalk.red("bin/install")
+      'You need to activate virtualenv by running ' + 
+      chalk.red('source '.concat(this.props.virtualenv.concat('/bin/activate'))) +
+      ' and install all dependencies by running ' + chalk.red('bin/install')
     ));
   }
 });

@@ -11,7 +11,7 @@ var app_name = base_path.split(path.sep).pop().toLowerCase() + "App";
 
 String.prototype.capitalizeFirstLetter = function() {
   return this.charAt(0).toUpperCase() + this.slice(1);
-}
+};
 
 String.prototype.splice = function(idx, str) {
   return this.slice(0, idx) + str + this.slice(idx);
@@ -19,16 +19,7 @@ String.prototype.splice = function(idx, str) {
 
 String.prototype.set_path_to = function(file) {
   return this + "/" + file;
-}
-
-function required(input)
-{
-  if (input.length === 0)
-  {
-    return 'This field is required. Enter a name';
-  }
-  return true;
-}
+};
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
