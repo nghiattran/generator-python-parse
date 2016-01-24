@@ -1,6 +1,6 @@
 {
   "name": "generator-python-parse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Python API template for backend system using parse.com as database.",
   "homepage": "https://github.com/nghiattran/python-parse",
   "author": "Nghia Tran <nghiattran3@gmail.com> (http://profile.nghiattran.com/)",
