@@ -1,6 +1,6 @@
 {
   "name": "generator-python-parse",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Python API template for backend system using parse.com as database.",
   "homepage": "https://github.com/nghiattran/python-parse",
   "author": "Nghia Tran <nghiattran3@gmail.com> (http://profile.nghiattran.com/)",
@@ -9,23 +9,37 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "generators",
+    "python-parse",
+    "python",
+    "parse",
+    "server",
+    "API"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.21.1",
+    "yeoman-generator": "^0.22.4",
     "chalk": "^1.0.0",
-    "yosay": "^1.0.2"
+    "yosay": "^1.0.2",
+    "findup-sync": "^0.3.0",
+    "inquirer": "^0.11.3",
+    "find-up": "^1.0.0",
+    "mem-fs-editor": "^2.1.0",
+    "mem-fs": "^1.1.2"
   },
   "devDependencies": {
-    "yeoman-assert": "^2.0.0",
+    "jshint": "^2.9.1",
     "gulp": "^3.6.0",
+    "gulp-coveralls": "^0.1.0",
     "gulp-eslint": "^1.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.9.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-jshint": "^2.0.0",
     "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-plumber": "^1.0.0",
+    "jshint-stylish": "^2.1.0",
+    "yeoman-assert": "^2.0.0"
   },
   "repository": {
     "type": "git",
