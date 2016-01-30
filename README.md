@@ -1,4 +1,7 @@
-# generator-python-parse [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# WARNING: Parse is shutting its service
+
+# generator-python-parse 
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
 > generator-python-parse is a generator for [Python-parse](https://github.com/nghiattran/python-parse). 
 

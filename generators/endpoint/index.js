@@ -4,9 +4,9 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
 var ejs = require('ejs');
-var findUp = require('find-up');
+var find_up = require('find-up');
 
-var base_path = path.dirname(findUp.sync('.yo-rc.json', {}));
+var base_path = path.dirname(find_up.sync('.yo-rc.json', {}));
 var app_name = base_path.split(path.sep).pop().toLowerCase() + "App";
 
 String.prototype.capitalizeFirstLetter = function() {
